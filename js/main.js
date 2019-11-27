@@ -171,7 +171,6 @@
       });
       return false;
     });
-
   });
   //portfolio end
 
