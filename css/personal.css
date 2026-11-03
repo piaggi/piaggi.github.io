@@ -55,27 +55,12 @@ pre { font: 12px/1.8 var(--mono); margin: 0; overflow-x: auto; }
 .code-green { color: var(--green); }
 .code-note p { border-top: 1px solid var(--line); padding-top: 12px; margin: 12px 0 0; font: 9px var(--mono); color: var(--muted); }
 .code-note .status-dot { width: 5px; height: 5px; }
-.interest-strip { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 23px 0; border-block: 1px solid var(--line); font: 13px var(--mono); letter-spacing: 2px; }
-.strip-number { color: var(--green); font-size: 10px; margin-right: 12px; }
-.interest-strip > span:nth-child(even) { color: #5a6b5f; }
 .section { padding: 74px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
 .section-index { color: var(--green); }
 .about { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; }
 h2 { font-size: clamp(32px, 3.5vw, 48px); line-height: 1.12; letter-spacing: -1.8px; font-weight: 600; margin: 0 0 24px; }
 h2 span { color: var(--muted); }
 .section-description { max-width: 560px; font-size: 16px; line-height: 1.9; color: var(--muted); margin: 0 0 24px; }
-.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 32px; margin-bottom: 30px; }
-.section-heading h2 { margin-bottom: 0; }
-.passion-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-.passion { --card-accent: var(--orange); display: flex; flex-direction: column; padding: 28px; border: 1px solid var(--line); border-top: 2px solid var(--card-accent); background: var(--surface); }
-.football { --card-accent: var(--green); }
-.karaoke { --card-accent: var(--purple); }
-.card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 32px; }
-.passion-icon { color: var(--card-accent); font: 32px/44px var(--mono); }
-.card-number { font: 9px var(--mono); letter-spacing: 1px; color: var(--muted); }
-h3 { font-size: 24px; letter-spacing: -.7px; margin: 0 0 15px; font-weight: 600; }
-.passion p { color: var(--muted); font-size: 14px; line-height: 1.9; margin: 0 0 26px; }
-.card-footer { display: flex; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding-top: 16px; margin-top: auto; font: 10px/1.6 var(--mono); color: var(--card-accent); }
 .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
 .contact h2 span { color: var(--green); }
 .contact-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line); }
@@ -91,8 +76,6 @@ footer a:hover { color: var(--green); }
   .page { padding-inline: 36px; }
   .hero { gap: 32px; }
   h1 { font-size: 64px; letter-spacing: -3px; }
-  .passion { padding: 22px; }
-  .card-top { flex-wrap: wrap; }
   .contact { gap: 32px; }
   .email { font-size: 16px; }
 }
@@ -109,15 +92,8 @@ footer a:hover { color: var(--green); }
   .portrait { margin-left: 12px; margin-right: 8px; }
   .code-note { margin: -48px 22px 0 0; padding: 16px; }
   .eyebrow { font-size: 10px; }
-  .interest-strip { letter-spacing: 0; font-size: 10px; gap: 8px; }
-  .strip-number { display: block; margin: 0 0 6px; }
   .section { padding-block: 48px; }
   .about, .contact { grid-template-columns: 1fr; gap: 8px; }
-  .section-heading { display: block; }
-  .section-heading .eyebrow { margin-bottom: 20px; }
-  .passion-grid { grid-template-columns: 1fr; }
-  .passion { padding: 26px; }
-  .card-top { margin-bottom: 24px; }
   .contact-links { margin-top: 20px; }
   .section-description { font-size: 15px; }
   footer { font-size: 9px; }
