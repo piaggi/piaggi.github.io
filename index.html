@@ -1,81 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Home page">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cześć, jestem Paweł Matujewicz. To mój mały kawałek internetu — poznajmy się i bądźmy w kontakcie.">
   <meta name="author" content="Paweł Matujewicz">
-
-  <title>Paweł Matujewicz</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
-
+  <meta name="theme-color" content="#f7f5ef">
+  <title>Paweł Matujewicz — cześć!</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="css/personal.css" rel="stylesheet">
 </head>
-
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Paweł Matujewicz</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Paweł
-          <span class="text-primary">Matujewicz</span>
-        </h1>
-        <div class="subheading mb-5">
-          <a href="mailto:pawel.matujewicz@gmail.com">pawel.matujewicz@gmail.com</a>
+<body id="top">
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <div class="page">
+    <header class="header">
+      <a class="wordmark" href="#top" aria-label="Paweł Matujewicz — początek strony">pm<span aria-hidden="true">.</span></a>
+      <nav aria-label="Nawigacja główna"><a href="#kontakt">Bądźmy w kontakcie <span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="hello">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="little-star" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span> Miło Cię tu widzieć</p>
+          <h1 id="hello">Cześć!<br>Jestem Paweł<span class="period">.</span></h1>
+          <p class="intro-text">A to mój mały kawałek internetu.<br>Miejsce, w którym łatwo mnie znaleźć<br class="desktop-break"> i po prostu powiedzieć „cześć”.</p>
+          <a class="button" href="mailto:pawel.matujewicz@gmail.com">Napisz do mnie <span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+          <p class="signature">Paweł Matujewicz</p>
         </div>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/pawe%C5%82-matujewicz-540083187/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100000407858487">
-            <i class="fab fa-facebook-f"></i>
-          </a>
+        <figure class="portrait">
+          <div class="photo-frame"><img src="img/profile.jpg" width="1396" height="1396" alt="Paweł Matujewicz na tle wody" fetchpriority="high"></div>
+          <figcaption><span aria-hidden="true">↳</span> Tak, to ja :)</figcaption>
+          <span class="photo-stamp" aria-hidden="true">po drugiej<br>stronie ekranu <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span></span>
+        </figure>
+      </section>
+      <section class="contact" id="kontakt" aria-labelledby="contact-title">
+        <div class="contact-heading"><p class="eyebrow">Zostańmy w kontakcie</p><h2 id="contact-title">Od jednego „cześć”<br>wszystko się zaczyna.</h2></div>
+        <div class="contact-links">
+          <a class="contact-link email" href="mailto:pawel.matujewicz@gmail.com"><span><span class="link-label">Najprościej? Mailowo.</span><span class="link-title">pawel.matujewicz@gmail.com</span></span><span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+          <a class="contact-link" href="https://www.linkedin.com/in/pawe%C5%82-matujewicz-540083187/"><span><span class="link-label">Trochę bardziej zawodowo</span><span class="link-title">LinkedIn</span></span><span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+          <a class="contact-link" href="https://www.facebook.com/profile.php?id=100000407858487"><span><span class="link-label">Trochę bardziej na luzie</span><span class="link-title">Facebook</span></span><span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
         </div>
-      </div>
-    </section>
-    <hr class="m-0">
+      </section>
+    </main>
+    <footer><span>© Paweł Matujewicz</span><span>Dobrze, że wpadasz. <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span></span></footer>
   </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
 </body>
-
 </html>
