@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cześć, jestem Paweł Matujewicz. To mój mały kawałek internetu — poznajmy się i bądźmy w kontakcie.">
+  <meta name="description" content="Paweł Matujewicz — Java developer, miłośnik piłki nożnej i karaoke. Kod, mecz i jeszcze jeden refren.">
   <meta name="author" content="Paweł Matujewicz">
-  <meta name="theme-color" content="#f7f5ef">
-  <title>Paweł Matujewicz — cześć!</title>
+  <meta name="theme-color" content="#101513">
+  <title>Paweł Matujewicz — Java, piłka i karaoke</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link href="css/personal.css" rel="stylesheet">
 </head>
@@ -14,34 +14,52 @@
   <a class="skip-link" href="#main">Przejdź do treści</a>
   <div class="page">
     <header class="header">
-      <a class="wordmark" href="#top" aria-label="Paweł Matujewicz — początek strony">pm<span aria-hidden="true">.</span></a>
-      <nav aria-label="Nawigacja główna"><a href="#kontakt">Bądźmy w kontakcie <span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
+      <a class="wordmark" href="#top" aria-label="Paweł Matujewicz — początek"><span aria-hidden="true">&lt;</span>piaggi<span aria-hidden="true"> /&gt;</span></a>
+      <nav aria-label="Nawigacja główna"><a href="#o-mnie">O mnie</a><a href="#po-godzinach">Po godzinach</a><a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
     </header>
     <main id="main">
-      <section class="intro" aria-labelledby="hello">
-        <div class="intro-copy">
-          <p class="eyebrow"><span class="little-star" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span> Miło Cię tu widzieć</p>
-          <h1 id="hello">Cześć!<br>Jestem Paweł<span class="period">.</span></h1>
-          <p class="intro-text">A to mój mały kawałek internetu.<br>Miejsce, w którym łatwo mnie znaleźć<br class="desktop-break"> i po prostu powiedzieć „cześć”.</p>
-          <a class="button" href="mailto:pawel.matujewicz@gmail.com">Napisz do mnie <span aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
-          <p class="signature">Paweł Matujewicz</p>
+      <section class="hero" aria-labelledby="hello">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Java developer & człowiek po godzinach</p>
+          <h1 id="hello">Kod.<br>Mecz.<br><span>Jeszcze jeden<br>refren.</span></h1>
+          <p class="hero-description">Cześć, jestem <strong>Paweł Matujewicz.</strong><br>Na co dzień Java. Po godzinach piłka nożna i karaoke.<br>Trzy różne światy, jeden ja.</p>
+          <div class="hero-actions"><a class="button" href="mailto:pawel.matujewicz@gmail.com">Porozmawiajmy <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a><a class="text-link" href="#o-mnie">Poznaj mnie <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16M5 13l7 7 7-7"/></svg></span></a></div>
         </div>
-        <figure class="portrait">
-          <div class="photo-frame"><img src="img/profile.jpg" width="1396" height="1396" alt="Paweł Matujewicz na tle wody" fetchpriority="high"></div>
-          <figcaption><span aria-hidden="true">↳</span> Tak, to ja :)</figcaption>
-          <span class="photo-stamp" aria-hidden="true">po drugiej<br>stronie ekranu <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span></span>
-        </figure>
+        <div class="hero-visual">
+          <figure class="portrait">
+            <div class="image-label"><span>PAWEŁ / POZA IDE</span><span aria-hidden="true">● ● ●</span></div>
+            <img src="img/profile.jpg" width="1396" height="1396" alt="Paweł Matujewicz na tle wody" fetchpriority="high">
+            <figcaption><span>Nie samym kodem człowiek żyje.</span><span class="photo-index" aria-hidden="true">01 / 01</span></figcaption>
+          </figure>
+          <div class="code-note" aria-label="Moje zainteresowania zapisane w Javie"><div class="code-filename"><span aria-hidden="true">J</span> Pawel.java</div><pre><code><span class="code-purple">var</span> pawel = <span class="code-purple">new</span> Developer(
+    <span class="code-green">"Java"</span>,
+    List.of(<span class="code-green">"piłka"</span>, <span class="code-green">"karaoke"</span>)
+);</code></pre><p><span class="status-dot" aria-hidden="true"></span> To dopiero początek rozmowy.</p></div>
+        </div>
       </section>
-      <section class="contact" id="kontakt" aria-labelledby="contact-title">
-        <div class="contact-heading"><p class="eyebrow">Zostańmy w kontakcie</p><h2 id="contact-title">Od jednego „cześć”<br>wszystko się zaczyna.</h2></div>
+      <div class="interest-strip" aria-label="Moje trzy światy"><span><span class="strip-number">01</span> JAVA</span><span aria-hidden="true">/</span><span><span class="strip-number">02</span> PIŁKA NOŻNA</span><span aria-hidden="true">/</span><span><span class="strip-number">03</span> KARAOKE</span></div>
+      <section class="about section" id="o-mnie" aria-labelledby="about-title">
+        <p class="eyebrow section-index">01 — O mnie</p>
+        <div><h2 id="about-title">Developer.<br><span>I nie tylko.</span></h2><p class="section-description">Pracuję jako developer Java, ale nie wszystko da się zamknąć w nawiasach klamrowych. Piłka nożna i karaoke to też część mojego świata. Ta strona jest miejscem dla całej trójki.</p><a class="text-link" href="https://www.linkedin.com/in/pawe%C5%82-matujewicz-540083187/">Zawodowo znajdziesz mnie na LinkedIn <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></div>
+      </section>
+      <section class="after-hours section" id="po-godzinach" aria-labelledby="passions-title">
+        <div class="section-heading"><p class="eyebrow section-index">02 — Moje światy</p><h2 id="passions-title">Każdy ma swój <span>rytm.</span></h2></div>
+        <div class="passion-grid">
+          <article class="passion java"><div class="card-top"><span class="passion-icon" aria-hidden="true">{ }</span><span class="card-number">01 / CODE</span></div><h3>Java & kod</h3><p>Tu zaczyna się moja zawodowa strona. Java, programowanie i pomysły, które stają się działającym kodem.</p><span class="card-footer">Mój język na co dzień<span aria-hidden="true">;</span></span></article>
+          <article class="passion football"><div class="card-top"><svg class="passion-icon" width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="6" y="4" width="36" height="40" rx="1"/><path d="M6 24h36M16 4v9h16V4M16 44v-9h16v9"/><circle cx="24" cy="24" r="6"/></svg><span class="card-number">02 / MATCH</span></div><h3>Piłka nożna</h3><p>Poza ekranem jest jeszcze boisko. Piłka nożna, meczowe emocje i temat, o którym zawsze można pogadać.</p><span class="card-footer">Rozmowa na pełne 90 minut<span aria-hidden="true">+</span></span></article>
+          <article class="passion karaoke"><div class="card-top"><svg class="passion-icon" width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="17" y="4" width="14" height="26" rx="7"/><path d="M11 21v3a13 13 0 0 0 26 0v-3M24 37v7M16 44h16M17 13h8M17 19h8"/></svg><span class="card-number">03 / REPEAT</span></div><h3>Karaoke</h3><p>Mikrofon zamiast klawiatury. Lubię karaoke — za muzykę, atmosferę i okazję, żeby po prostu dobrze się bawić.</p><span class="card-footer">Jeszcze jeden refren?<span aria-hidden="true">♪</span></span></article>
+        </div>
+      </section>
+      <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+        <div><p class="eyebrow section-index">03 — Kontakt</p><h2 id="contact-title">O kodzie, meczu<br>czy o <span>playliście?</span></h2><p class="section-description">Dobry temat to dobry początek. Napisz.</p></div>
         <div class="contact-links">
-          <a class="contact-link email" href="mailto:pawel.matujewicz@gmail.com"><span><span class="link-label">Najprościej? Mailowo.</span><span class="link-title">pawel.matujewicz@gmail.com</span></span><span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
-          <a class="contact-link" href="https://www.linkedin.com/in/pawe%C5%82-matujewicz-540083187/"><span><span class="link-label">Trochę bardziej zawodowo</span><span class="link-title">LinkedIn</span></span><span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
-          <a class="contact-link" href="https://www.facebook.com/profile.php?id=100000407858487"><span><span class="link-label">Trochę bardziej na luzie</span><span class="link-title">Facebook</span></span><span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+          <a class="contact-link" href="mailto:pawel.matujewicz@gmail.com"><span><span class="link-label">Bezpośrednio do mnie</span><span class="link-title email">pawel.matujewicz@gmail.com</span></span><span class="arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+          <a class="contact-link" href="https://www.linkedin.com/in/pawe%C5%82-matujewicz-540083187/"><span><span class="link-label">Zawodowa strona</span><span class="link-title">LinkedIn</span></span><span class="arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
+          <a class="contact-link" href="https://www.facebook.com/profile.php?id=100000407858487"><span><span class="link-label">Bardziej prywatnie</span><span class="link-title">Facebook</span></span><span class="arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
         </div>
       </section>
     </main>
-    <footer><span>© Paweł Matujewicz</span><span>Dobrze, że wpadasz. <span aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M2 12h20M5 5l14 14M5 19 19 5"/></svg></span></span></footer>
+    <footer><span>© Paweł Matujewicz</span><span>Java w kodzie. Pasja poza nim.</span><a href="#top">Do góry <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M5 11l7-7 7 7"/></svg></span></a></footer>
   </div>
 </body>
 </html>
