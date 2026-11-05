@@ -102,3 +102,30 @@ footer a:hover { color: var(--green); }
   html { scroll-behavior: auto; }
   .button { transition: none; }
 }
+
+/* Photos are part of the page composition, without interactive controls. */
+.about { align-items: center; }
+.about-photo { margin: 0; max-width: 440px; border: 1px solid var(--line); background: var(--surface); }
+.about-photo img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.about-photo figcaption { font: 11px/1.7 var(--mono); }
+.experience-heading { display: flex; justify-content: space-between; align-items: center; gap: 32px; margin-bottom: 32px; }
+.experience-heading h2 { margin-bottom: 0; }
+.cv-download { max-width: 320px; }
+.cv-download p { color: var(--muted); font-size: 12px; line-height: 1.7; }
+.experience-item { display: grid; grid-template-columns: 1fr 2fr; gap: 48px; border-top: 1px solid var(--line); padding: 30px 0; }
+.experience-domain { color: var(--green); font: 11px/1.8 var(--mono); margin: 3px 0 0; letter-spacing: 1px; }
+h3 { font-size: 21px; line-height: 1.4; font-weight: 600; margin: 0 0 12px; }
+.experience-item div > p { max-width: 700px; margin: 0; color: var(--muted); font-size: 15px; line-height: 1.9; }
+.skills { border-top: 1px solid var(--line); padding-top: 32px; }
+.skills h3 { font-size: 16px; margin-bottom: 20px; }
+.skills ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.skills li { padding: 9px 12px; font: 11px/1.5 var(--mono); color: var(--muted); border: 1px solid var(--line); background: var(--surface); }
+@media (max-width: 760px) {
+  nav { flex-wrap: wrap; gap: 18px; }
+  .about { gap: 32px; }
+  .about-photo { max-width: 100%; }
+  .experience-heading { display: block; }
+  .cv-download { margin-top: 28px; }
+  .experience-item { grid-template-columns: 1fr; gap: 14px; }
+  .experience-item h3 { font-size: 19px; }
+}
