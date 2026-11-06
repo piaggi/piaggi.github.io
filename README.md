@@ -34,8 +34,9 @@ nawigację klawiaturą i linki, w tym pobieranie CV.
 ## Nagranie karaoke
 
 Sekcja „Po godzinach” zawiera jeden odtwarzacz z listą 10 najczęściej odtwarzanych nagrań, wybranych
-z dostarczonego eksportu (privacy=0 i count_plays > 100), bez tokenu, iframe
-i linku do profilu iSing. Kolejność ustalono na podstawie eksportu. Interfejs pokazuje tylko tytuły i czas nagrania.
+z dostarczonego eksportu (privacy=0, count_plays > 100, recording_type=0 i brak pola duet).
+Podstawy do duetu (recording_type=1) oraz nagrania duetowe nie wchodzą do listy.
+Odtwarzacz nie używa tokenu, iframe ani linku do profilu iSing. Kolejność ustalono na podstawie eksportu. Interfejs pokazuje tylko tytuły i czas nagrania.
 Wybór utworu wstrzymuje poprzedni; nie ma automatycznego odtwarzania ani przechodzenia
 do następnego utworu. Lista korzysta ze zwykłych przycisków obsługiwanych klawiaturą.
 Bez JavaScriptu natywny odtwarzacz udostępnia tylko początkowe nagranie. Safari korzysta z natywnego HLS; pozostałe wspierane przeglądarki
