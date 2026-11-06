@@ -193,7 +193,6 @@ nav .nav-contact { color: var(--green); background: #283623; }
 @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
 
 .after-hours { display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; gap: 56px; }
-.karaoke-credit { font: 11px/1.9 var(--mono); color: var(--muted); }
 .karaoke-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
 .karaoke-card-heading { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; }
 .karaoke-card-heading .eyebrow { margin: 0; }
@@ -220,6 +219,5 @@ nav .nav-contact { color: var(--green); background: #283623; }
 .track-number, .track-duration { color: var(--muted); font: 10px var(--mono); flex-shrink: 0; }
 .track-text { flex: 1; min-width: 0; }
 .track-title { display: block; font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
-.track-artist { display: block; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .karaoke-track[aria-pressed="true"] .track-title, .karaoke-track[aria-pressed="true"] .track-number { color: var(--green); }
 @media (max-width: 760px) { .karaoke-track { gap: 10px; padding: 10px; } }

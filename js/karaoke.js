@@ -5,7 +5,6 @@
   const loadButton = document.querySelector('.karaoke-load');
   const status = document.querySelector('.karaoke-status');
   const title = document.querySelector('.karaoke-current-title');
-  const artist = document.querySelector('.karaoke-current-artist');
   const tracks = Array.from(document.querySelectorAll('.karaoke-track'));
   const nativeHls = Boolean(player.canPlayType('application/vnd.apple.mpegurl'));
   let selected = tracks.findIndex(track => track.getAttribute('aria-pressed') === 'true');
@@ -76,7 +75,7 @@
   }
 
   player.addEventListener('playing', () => {
-    status.textContent = 'Teraz gra: ' + tracks[selected].dataset.title + ' — piaggi.';
+    status.textContent = 'Teraz gra: ' + tracks[selected].dataset.title + '.';
   });
   if (nativeHls) player.addEventListener('error', () => {
     if (player.error) fail(version);
@@ -88,8 +87,7 @@
       selected = index;
       tracks.forEach((item, i) => item.setAttribute('aria-pressed', String(i === index)));
       title.textContent = track.dataset.title;
-      artist.textContent = track.dataset.artist + ' · wykonanie piaggi';
-      player.setAttribute('aria-label', track.dataset.title + ' — wykonanie karaoke piaggi');
+      player.setAttribute('aria-label', track.dataset.title + ' — karaoke');
       loadSelected();
     });
   });
