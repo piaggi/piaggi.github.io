@@ -30,3 +30,14 @@ Zdjęcia są częścią układu, bez galerii i skryptów. Po zmianach sprawdź w
 nawigację klawiaturą i linki, w tym pobieranie CV.
 
 `LICENSE` zachowuje informację o licencji pierwotnego szablonu.
+
+## Nagranie karaoke
+
+Sekcja „Po godzinach” odtwarza pojedynczy strumień HLS bez tokenu, iframe i linku do
+profilu iSing. Safari korzysta z natywnego HLS; pozostałe wspierane przeglądarki
+wczytują lokalne `vendor/hls/hls.min.js` (hls.js 1.6.13, licencja w tym samym folderze)
+dopiero po kliknięciu „Wczytaj nagranie”. Kod integracji: `js/karaoke.js`.
+
+Odtwarzanie wymaga dostępności serwera `w.ising.pl`; dla hls.js serwer musi zezwalać
+na CORS dla playlist i segmentów. Sama dostępność adresu w nowej karcie nie
+potwierdza działania odtwarzacza na innej domenie. Brak autoplay i preload nagrania.

@@ -191,3 +191,19 @@ nav .nav-contact { color: var(--green); background: #283623; }
   .link-title.email { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
+
+.after-hours { display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; gap: 56px; }
+.karaoke-credit { font: 11px/1.9 var(--mono); color: var(--muted); }
+.karaoke-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.karaoke-card-heading { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; }
+.karaoke-card-heading .eyebrow { margin: 0; }
+.karaoke-badge { color: var(--purple); font: 10px var(--mono); border: 1px solid #574565; border-radius: 20px; padding: 7px 10px; }
+.karaoke-card video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #080b09; object-fit: contain; }
+.karaoke-card-body { padding: 22px; }
+.karaoke-card-body > p { color: var(--muted); font-size: 13px; line-height: 1.7; }
+.karaoke-card .button { font: inherit; font-size: 13px; cursor: pointer; }
+.karaoke-card .button:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
+.karaoke-card .button:disabled { opacity: .65; cursor: wait; }
+.karaoke-card [hidden] { display: none; }
+.karaoke-card .karaoke-status { min-height: 2em; font-size: 12px; margin-bottom: 0; }
+@media (max-width: 760px) { .after-hours { grid-template-columns: 1fr; gap: 24px; } }

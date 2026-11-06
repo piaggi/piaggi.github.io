@@ -15,7 +15,7 @@
   <div class="page">
     <header class="header">
       <a class="wordmark" href="#top" aria-label="Paweł Matujewicz — początek"><span aria-hidden="true">&lt;</span>piaggi<span aria-hidden="true"> /&gt;</span></a>
-      <nav aria-label="Nawigacja główna"><a href="#o-mnie">O mnie</a><a href="#doswiadczenie">Doświadczenie</a><a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
+      <nav aria-label="Nawigacja główna"><a href="#o-mnie">O mnie</a><a href="#doswiadczenie">Doświadczenie</a><a href="#po-godzinach">Po godzinach</a><a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
     </header>
     <main id="main">
       <section class="hero" aria-labelledby="hello">
@@ -51,8 +51,16 @@
         </div>
         <div class="skills"><h3>Technologie, z którymi pracowałem</h3><ul><li>Java</li><li>Spring / Spring Boot</li><li>Spring Data / Security</li><li>JPA / Hibernate</li><li>PostgreSQL</li><li>MySQL / MariaDB</li><li>Liquibase</li><li>PTC Windchill</li><li>JavaScript / Angular</li><li>Jenkins</li><li>Selenium</li><li>Karma / Jasmine</li></ul></div>
       </section>
+      <section class="after-hours section" id="po-godzinach" aria-labelledby="karaoke-title">
+        <div><p class="eyebrow section-index">03 — Po godzinach</p><h2 id="karaoke-title">Zamiast klawiatury,<br><span>mikrofon.</span></h2><p class="section-description">Lubię śpiewać karaoke. Tu możesz posłuchać mojego wykonania „Piosenki księżycowej”.</p><p class="karaoke-credit">Piosenka księżycowa · Varius Manx<br>Wykonanie karaoke: piaggi</p></div>
+        <div class="karaoke-card">
+          <div class="karaoke-card-heading"><span class="eyebrow">NA MIKROFONIE</span><span class="karaoke-badge">KARAOKE</span></div>
+          <video id="karaoke-player" controls playsinline preload="none" aria-label="Piosenka księżycowa — wykonanie karaoke piaggi"><source src="https://w.ising.pl/media/play/uv/1264746/6b4e9ab994002f299ee8a338f75bac93/playlist.m3u8" type="application/vnd.apple.mpegurl">Twoja przeglądarka nie obsługuje odtwarzania wideo.</video>
+          <div class="karaoke-card-body"><h3>Piosenka księżycowa</h3><p>Varius Manx · wykonanie piaggi</p><button class="button karaoke-load" type="button" hidden>Wczytaj nagranie</button><p class="karaoke-status" role="status" aria-live="polite">Naciśnij odtwarzanie, aby posłuchać nagrania.</p><noscript><p>Jeśli odtwarzanie nie działa, włącz JavaScript — pozwoli on użyć odtwarzacza HLS.</p></noscript></div>
+        </div>
+      </section>
       <section class="contact section" id="kontakt" aria-labelledby="contact-title">
-        <div><p class="eyebrow section-index">03 — Kontakt</p><h2 id="contact-title">Dobry pomysł?<br><span>Porozmawiajmy.</span></h2><p class="section-description">Dobry temat to dobry początek. Napisz.</p></div>
+        <div><p class="eyebrow section-index">04 — Kontakt</p><h2 id="contact-title">Dobry pomysł?<br><span>Porozmawiajmy.</span></h2><p class="section-description">Dobry temat to dobry początek. Napisz.</p></div>
         <div class="contact-links">
           <a class="contact-link" href="mailto:pawel.matujewicz@gmail.com"><span><span class="link-label">Bezpośrednio do mnie</span><span class="link-title email">pawel.matujewicz@gmail.com</span></span><span class="arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
           <a class="contact-link" href="https://www.linkedin.com/in/pawe%C5%82-matujewicz-540083187/"><span><span class="link-label">Zawodowa strona</span><span class="link-title">LinkedIn</span></span><span class="arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a>
@@ -62,5 +70,6 @@
     </main>
     <footer><span>© Paweł Matujewicz</span><span>Paweł Matujewicz / Java developer</span><a href="#top">Do góry <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M5 11l7-7 7 7"/></svg></span></a></footer>
   </div>
+  <script src="js/karaoke.js" defer></script>
 </body>
 </html>
