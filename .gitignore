@@ -1,0 +1,11 @@
+# Local editor settings
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local caches and legacy dependencies
+__pycache__/
+node_modules/
