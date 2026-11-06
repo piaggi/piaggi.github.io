@@ -33,8 +33,12 @@ nawigację klawiaturą i linki, w tym pobieranie CV.
 
 ## Nagranie karaoke
 
-Sekcja „Po godzinach” odtwarza pojedynczy strumień HLS bez tokenu, iframe i linku do
-profilu iSing. Safari korzysta z natywnego HLS; pozostałe wspierane przeglądarki
+Sekcja „Po godzinach” zawiera jeden odtwarzacz z listą 15 nagrań, wybranych
+z dostarczonego eksportu (privacy=0 i count_plays > 100), bez tokenu, iframe
+i linku do profilu iSing. Liczba odsłon jest stanem z eksportu, nie licznikiem na żywo.
+Wybór utworu wstrzymuje poprzedni; nie ma automatycznego odtwarzania ani przechodzenia
+do następnego utworu. Lista korzysta ze zwykłych przycisków obsługiwanych klawiaturą.
+Bez JavaScriptu natywny odtwarzacz udostępnia tylko początkowe nagranie. Safari korzysta z natywnego HLS; pozostałe wspierane przeglądarki
 wczytują lokalne `vendor/hls/hls.min.js` (hls.js 1.6.13, licencja w tym samym folderze)
 dopiero po kliknięciu „Wczytaj nagranie”. Kod integracji: `js/karaoke.js`.
 

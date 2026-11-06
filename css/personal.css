@@ -207,3 +207,19 @@ nav .nav-contact { color: var(--green); background: #283623; }
 .karaoke-card [hidden] { display: none; }
 .karaoke-card .karaoke-status { min-height: 2em; font-size: 12px; margin-bottom: 0; }
 @media (max-width: 760px) { .after-hours { grid-template-columns: 1fr; gap: 24px; } }
+
+.karaoke-playlist { border-top: 1px solid var(--line); }
+.playlist-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 22px; }
+.playlist-heading h4 { margin: 0; font-size: 13px; font-weight: 500; }
+.playlist-heading > span { font: 10px var(--mono); color: var(--muted); }
+.karaoke-playlist ol { list-style: none; padding: 0 10px 10px; margin: 0; max-height: 390px; overflow-y: auto; scrollbar-color: #52664b var(--surface); }
+.karaoke-track { display: flex; width: 100%; align-items: center; gap: 14px; min-height: 64px; padding: 12px; border: 1px solid transparent; border-radius: 10px; color: var(--text); background: transparent; text-align: left; font: inherit; cursor: pointer; }
+.karaoke-track:hover { background: #253025; }
+.karaoke-track[aria-pressed="true"] { background: #2a3825; border-color: #52664b; }
+.karaoke-track:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.track-number, .track-duration { color: var(--muted); font: 10px var(--mono); flex-shrink: 0; }
+.track-text { flex: 1; min-width: 0; }
+.track-title { display: block; font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
+.track-artist { display: block; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.karaoke-track[aria-pressed="true"] .track-title, .karaoke-track[aria-pressed="true"] .track-number { color: var(--green); }
+@media (max-width: 760px) { .karaoke-track { gap: 10px; padding: 10px; } }
