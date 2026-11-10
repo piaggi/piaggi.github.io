@@ -191,3 +191,38 @@ nav .nav-contact { color: var(--green); background: #283623; }
   .link-title.email { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
+.after-hours { display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; gap: 56px; }
+.karaoke-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 20px; background: var(--surface); }
+.karaoke-card-heading { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; }
+.karaoke-card-heading .eyebrow { margin: 0; }
+.karaoke-badge { color: var(--purple); font: 10px var(--mono); border: 1px solid #574565; border-radius: 20px; padding: 7px 10px; }
+.karaoke-card video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #080b09; object-fit: contain; }
+.karaoke-card-body { padding: 22px; }
+.karaoke-card-body > p { color: var(--muted); font-size: 13px; line-height: 1.7; }
+.karaoke-card .button { font: inherit; font-size: 13px; cursor: pointer; }
+.karaoke-card .button:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
+.karaoke-card .button:disabled { opacity: .65; cursor: wait; }
+.karaoke-card [hidden] { display: none; }
+.karaoke-card .karaoke-status { min-height: 2em; font-size: 12px; margin-bottom: 0; }
+@media (max-width: 760px) { .after-hours { grid-template-columns: 1fr; gap: 24px; } }
+
+.karaoke-playlist { border-top: 1px solid var(--line); }
+.playlist-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 22px; }
+.playlist-heading h4 { margin: 0; font-size: 13px; font-weight: 500; }
+.playlist-heading > span { font: 10px var(--mono); color: var(--muted); }
+.karaoke-playlist ol { list-style: none; padding: 0 10px 10px; margin: 0; max-height: 390px; overflow-y: auto; scrollbar-color: #52664b var(--surface); }
+.karaoke-track { display: flex; width: 100%; align-items: center; gap: 14px; min-height: 64px; padding: 12px; border: 1px solid transparent; border-radius: 10px; color: var(--text); background: transparent; text-align: left; font: inherit; cursor: pointer; }
+.karaoke-track:hover { background: #253025; }
+.karaoke-track[aria-pressed="true"] { background: #2a3825; border-color: #52664b; }
+.karaoke-track:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; }
+.track-number, .track-duration { color: var(--muted); font: 10px var(--mono); flex-shrink: 0; }
+.track-text { flex: 1; min-width: 0; }
+.track-title { display: block; font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
+.karaoke-track[aria-pressed="true"] .track-title, .karaoke-track[aria-pressed="true"] .track-number { color: var(--green); }
+@media (max-width: 760px) { .karaoke-track { gap: 10px; padding: 10px; } }
+.karaoke-list-status, .karaoke-playlist noscript p { margin: 0; padding: 0 22px 18px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.karaoke-list-status:empty { display: none; }
+.karaoke-refresh { border: 1px solid var(--line); border-radius: 18px; padding: 8px 12px; background: transparent; color: var(--green); font: inherit; font-size: 11px; cursor: pointer; }
+.karaoke-refresh:disabled { opacity: .6; cursor: wait; }
+.karaoke-refresh:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+.karaoke-track > .track-title { flex: 1; min-width: 0; }
