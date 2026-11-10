@@ -15,7 +15,7 @@
   <div class="page">
     <header class="header">
       <a class="wordmark" href="#top" aria-label="Paweł Matujewicz — początek"><span aria-hidden="true">&lt;</span>piaggi<span aria-hidden="true"> /&gt;</span></a>
-      <nav aria-label="Nawigacja główna"><a href="#o-mnie">O mnie</a><a href="#doswiadczenie">Doświadczenie</a><a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
+      <nav aria-label="Nawigacja główna"><a href="#o-mnie">O mnie</a><a href="#doswiadczenie">Doświadczenie</a><a href="#po-godzinach">Po godzinach</a><a class="nav-contact" href="#kontakt">Kontakt <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></nav>
     </header>
     <main id="main">
       <section class="hero" aria-labelledby="hello">
@@ -51,6 +51,15 @@
         </div>
         <div class="skills"><h3>Technologie, z którymi pracowałem</h3><ul><li>Java</li><li>Spring / Spring Boot</li><li>Spring Data / Security</li><li>JPA / Hibernate</li><li>PostgreSQL</li><li>MySQL / MariaDB</li><li>Liquibase</li><li>PTC Windchill</li><li>JavaScript / Angular</li><li>Jenkins</li><li>Selenium</li><li>Karma / Jasmine</li></ul></div>
       </section>
+      <section class="after-hours section" id="po-godzinach" aria-labelledby="karaoke-title">
+        <div><p class="eyebrow section-index">Po godzinach</p><h2 id="karaoke-title">Zamiast klawiatury,<br><span>mikrofon.</span></h2><p class="section-description">Lubię śpiewać karaoke. Tutaj możesz posłuchać moich najnowszych nagrań.</p></div>
+        <div class="karaoke-card">
+          <div class="karaoke-card-heading"><span class="eyebrow">NA MIKROFONIE</span><span class="karaoke-badge">KARAOKE</span></div>
+          <video id="karaoke-player" controls playsinline preload="none" aria-label="Nagranie karaoke"></video>
+          <div class="karaoke-card-body"><h3 class="karaoke-current-title">Wybierz nagranie</h3><button class="button karaoke-load" type="button" hidden>Wczytaj nagranie</button><p class="karaoke-status" role="status" aria-live="polite"></p></div>
+          <div class="karaoke-playlist"><div class="playlist-heading"><h4>Najnowsze nagrania</h4><button class="karaoke-refresh" type="button" hidden>Odśwież listę</button></div><p class="karaoke-list-status" role="status" aria-live="polite">Wczytywanie nagrań…</p><ol aria-label="Nagrania karaoke"></ol><noscript><p>Włącz JavaScript, aby pobrać listę nagrań i uruchomić odtwarzacz.</p></noscript></div>
+        </div>
+      </section>
       <section class="contact section" id="kontakt" aria-labelledby="contact-title">
         <div><p class="eyebrow section-index">Kontakt</p><h2 id="contact-title">Dobry pomysł?<br><span>Porozmawiajmy.</span></h2><p class="section-description">Dobry temat to dobry początek. Napisz.</p></div>
         <div class="contact-links">
@@ -62,5 +71,6 @@
     </main>
     <footer><span>© Paweł Matujewicz</span><span>Paweł Matujewicz / Java developer</span><a href="#top">Do góry <span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V4M5 11l7-7 7 7"/></svg></span></a></footer>
   </div>
+  <script src="js/karaoke.js" defer></script>
 </body>
 </html>
